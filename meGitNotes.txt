@@ -1,4 +1,25 @@
 
+
+
+
+GIT - GIT is a version control system that helps to track the changes in the code.
+it is free and open source.
+
+uses :
+1. to track the history
+2. collaborate - few ppl will be working on the same task. 
+
+
+GITHUB :
+website that allows developers to store and manage their code using GIT.
+https://github.com
+
+the code is stored in github using folder structure called as repository.
+
+first step is to create the git repository in github.
+new repository - create a new repository - claxmi - gitPractise
+
+git commands:
 git commands:
 
 1. git config --global user.name "laxmichetty"-> click enter
@@ -25,3 +46,77 @@ user.name=laxmichetty
 user.email=laxmichetty17@gmail.com
 laxmi.chetty=laxmichetty17@gmail.com
 
+
+1. git config --global user.name "du1990mmy"  -> click enter
+2. git config --global user.email "du1990mmy@gmail.com" -> click enter
+3. git config --list ->enter . provides the below information. name and email are set in git bash.
+user.name=du1990mmy
+user.email=du1990mmy@gmail.com
+
+4. cloning a repository in out local machine
+cmd -> git clone "https url"
+
+how to clone code from git to local ?
+go to repository. click on <>Code .
+under Local -> HTTPS -> copy  https://github.com/du1990mmy/Repo1.git 
+and open git bash. paste the above url where u want to clone the git repository.
+
+cmd used is -> git clone https://github.com/du1990mmy/Repo1.git
+check in the local folder
+
+how to check current dir? 
+pwd
+
+how to navigate to particular folder?
+cd Repo1 
+[ /c/Users/KARUNA/Repo1 ]
+
+how to go back one step behind. ex: to /c/Users/KARUNA
+cd ..
+pwd
+/c/Users/KARUNA
+
+how to check what all files are available?
+ls
+
+how to check hidden files?
+ls -a
+
+5. displays the state of code
+cmd -> git status
+
+go to [ /c/Users/KARUNA/Repo1 ]
+git status 
+
+KARUNA@DESKTOP-66RUSCA MINGW64 ~/Repo1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+
+few status of git :
+untracked  - new files that git is unable to track
+modified - files that are changed 
+staged/add - file is ready to be commited. or add stage. ex: modify the existing file. then it becomes ready to commit.
+unmodified - unchanged file
+
+change - modify - add - commit
+new file - untracked 
+
+add and commit cmds:
+git add <filename>
+git add file1.txt
+
+git commit -m "some message"  // make sure to enter the proper msg
+
+push:
+git push origin main
+"KARUNA@DESKTOP-66RUSCA MINGW64 ~/Repo1 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean "  ---------------> it means in local u have some code that is not updated in git. then u have to push ur code to git repo.
+
+git push origin main -> here origin = repo name and main is branch name
