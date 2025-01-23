@@ -1,0 +1,27 @@
+
+git commands:
+
+1. git config --global user.name "laxmichetty"-> click enter
+2. git config --global user.email ""laxmichetty17@gmail.com" -> click enter
+3. git config --list ->enter . provides the below information. name and email are set in git bash.
+
+KARUNA@DESKTOP-66RUSCA MINGW64 /e/gitFolder
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=laxmichetty
+user.email=laxmichetty17@gmail.com
+laxmi.chetty=laxmichetty17@gmail.com
+
